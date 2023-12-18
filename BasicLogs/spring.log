@@ -55,3 +55,29 @@
 2023-12-15 17:20:46,701 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
 2023-12-15 17:20:47,142 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
 2023-12-15 17:20:47,162 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2023-12-15 17:20:47,189 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2023-12-15 17:20:47,324 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: feedBackUsingPOST_1
+2023-12-15 17:20:47,351 INFO com.example.On.Road.Vehicle.Breakdown.Assistance.OnRoadVehicleBreakdownAssistanceApplication [restartedMain] Started OnRoadVehicleBreakdownAssistanceApplication in 5.135 seconds (JVM running for 6.148)
+2023-12-15 17:23:07,694 INFO org.apache.catalina.core.StandardService [Thread-4] Stopping service [Tomcat]
+2023-12-15 17:23:07,708 INFO com.zaxxer.hikari.HikariDataSource [Thread-4] HikariPool-1 - Shutdown initiated...
+2023-12-15 17:23:07,714 INFO com.zaxxer.hikari.HikariDataSource [Thread-4] HikariPool-1 - Shutdown completed.
+2023-12-15 17:23:07,777 INFO com.example.On.Road.Vehicle.Breakdown.Assistance.OnRoadVehicleBreakdownAssistanceApplication [restartedMain] application running successfully........
+2023-12-15 17:23:07,813 INFO com.example.On.Road.Vehicle.Breakdown.Assistance.OnRoadVehicleBreakdownAssistanceApplication [restartedMain] Starting OnRoadVehicleBreakdownAssistanceApplication using Java 17.0.8.1 on DESKTOP-1ULGF16 with PID 21388 (C:\Users\Administrator\Downloads\On-Road-Vehicle-Breakdown-Assistance\target\classes started by Administrator in C:\Users\Administrator\Downloads\On-Road-Vehicle-Breakdown-Assistance)
+2023-12-15 17:23:07,814 INFO com.example.On.Road.Vehicle.Breakdown.Assistance.OnRoadVehicleBreakdownAssistanceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-12-15 17:23:08,241 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-12-15 17:23:08,242 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-12-15 17:23:08,265 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-15 17:23:08,302 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 17:23:08,305 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2023-12-15 17:23:08,372 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2023-12-15 17:23:08,372 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-12-15 17:23:08,452 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 17:23:08,675 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-15 17:23:08,785 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2023-12-15 17:23:08,786 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2023-12-15 17:23:08,793 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2023-12-15 17:23:08,820 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: feedBackUsingPOST_1
+2023-12-15 17:23:08,830 INFO com.example.On.Road.Vehicle.Breakdown.Assistance.OnRoadVehicleBreakdownAssistanceApplication [restartedMain] Started OnRoadVehicleBreakdownAssistanceApplication in 1.049 seconds (JVM running for 147.628)
+2023-12-15 17:29:15,422 INFO org.apache.catalina.core.StandardService [RMI TCP Connection(12)-127.0.0.1] Stopping service [Tomcat]
+2023-12-15 17:29:15,427 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(12)-127.0.0.1] HikariPool-2 - Shutdown initiated...
+2023-12-15 17:29:15,430 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(12)-127.0.0.1] HikariPool-2 - Shutdown completed.
