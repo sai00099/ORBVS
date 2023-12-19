@@ -19,7 +19,6 @@ public class OnRoadVehicleBreakdownAssistanceApplication {
 	public static void main(String[] args) {
 		Log.info("application running successfully........");
 		SpringApplication.run(OnRoadVehicleBreakdownAssistanceApplication.class, args);
-
 	}
 	@Bean
 	public Docket productApi() {

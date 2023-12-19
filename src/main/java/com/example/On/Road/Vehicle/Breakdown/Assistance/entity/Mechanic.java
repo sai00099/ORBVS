@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,6 +23,15 @@ public class Mechanic {
 	private String viewRequest;
 	private String feedBack;
 	private String address;
+	@ManyToOne
+	private Admin admin;
+	
+	public Admin getAdmin() {
+		return admin;
+	}
+	public void setAdmin(Admin admin) {
+		this.admin = admin;
+	}
 	public long getmId() {
 		return mId;
 	}
@@ -66,6 +76,11 @@ public class Mechanic {
 		this.viewRequest = viewRequest;
 		this.feedBack = feedBack;
 		this.address = address;
+	}
+	
+	public Mechanic(Admin admin) {
+		super();
+		this.admin = admin;
 	}
 	public Mechanic() {
 		super();
