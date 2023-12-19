@@ -12,10 +12,10 @@ public interface IUsersService {
 
 	public Users deleteUser(long userId) throws ResourceNotFoundException; 
 	
-	public Users searchMechanic(long mechanicId);
+	public Users searchMechanic(long mechanicId) throws ResourceNotFoundException;
 	
-	public Users sendRequest(long mechanicId);
+	public Users sendRequest(long mechanicId) throws ResourceNotFoundException;
 	
-	public Users feedBack(Users user);
+	public Users feedBack(Users user) throws ResourceNotFoundException;
 
 }

@@ -1,9 +1,11 @@
 package com.example.On.Road.Vehicle.Breakdown.Assistance.servicesImpl;
+import java.lang.StackWalker.Option;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.On.Road.Vehicle.Breakdown.Assistance.entity.Mechanic;
 import com.example.On.Road.Vehicle.Breakdown.Assistance.entity.Users;
 import com.example.On.Road.Vehicle.Breakdown.Assistance.exceptions.ResourceNotFoundException;
 import com.example.On.Road.Vehicle.Breakdown.Assistance.exceptions.UserAlreadyExistsException;
@@ -54,20 +56,35 @@ public class UsersServiceImpl implements IUsersService {
 
 
 	@Override
-	public Users searchMechanic(long mechanicId) {
+	public Users searchMechanic(long mechanicId) throws ResourceNotFoundException {
+Optional<Users> us=usersRepository.findById(mechanicId);
+if (mechanicId==0) {
+	throw new ResourceNotFoundException("mechanic id not found");
 
-		return null;
+}
+	if(us.isPresent()) {
+
+return us.get();
+	}else {
+		throw new ResourceNotFoundException("mechanic is not found");
+	}
 	}
 
 	@Override
-	public Users sendRequest(long mechanicId) {
+	public Users sendRequest(long mechanicId) throws ResourceNotFoundException {
+		if (mechanicId == 0) {
+		}
+Users sr=usersRepository.findById(mechanicId).orElseThrow(()-> new ResourceNotFoundException("request not found"));
 
-		return null;
+		return sr ;
 	}
 
 	@Override
-	public Users feedBack(Users user) {
-		return null;
+	public Users feedBack(Users user) throws ResourceNotFoundException {
+		Users fb = usersRepository.findById(user.getUserId())
+				.orElseThrow(() -> new ResourceNotFoundException("mechanic 0d not found"));
+
+		return fb;
 	}
 
 	
